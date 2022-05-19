@@ -20,12 +20,7 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
-    // riddles: [
-    //   {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Riddle'
-    //   }
-    // ],
+   
     friends: [
       {
         type: Schema.Types.ObjectId,
