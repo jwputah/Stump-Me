@@ -1,5 +1,6 @@
 import logo from './stumpMe.png';
-// import './App.css';
+import Riddle from './Pages/Riddle';
+
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1>Welcome to Stump Me</h1>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <Riddle />
     </div>
   );
 }
