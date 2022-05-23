@@ -72,7 +72,7 @@ const Profile = (props) => {
             title={`${user.username}'s thoughts...`}
           /> */}
         </div>
-
+<h1>PROFILE PAGE</h1>
         <div className="col-12 col-lg-3 mb-3">
           {/* <FriendList
             username={user.username}
