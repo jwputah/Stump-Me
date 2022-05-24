@@ -7,7 +7,7 @@ import { Navigate, useParams } from "react-router-dom";
 // import FriendList from '../components/FriendList';
 
 //change import below to useQuery, useMutation is necessary
-import { useQuery } from "@apollo/client";
+// import { useQuery } from "@apollo/client";
 // import { QUERY_USER, QUERY_ME } from "../utils/queries";
 //import { ADD_FRIEND } from '../utils/mutations';
 import Auth from "../utils/auth";
@@ -72,7 +72,7 @@ const Profile = (props) => {
             title={`${user.username}'s thoughts...`}
           /> */}
         </div>
-<h1>PROFILE PAGE</h1>
+
         <div className="col-12 col-lg-3 mb-3">
           {/* <FriendList
             username={user.username}

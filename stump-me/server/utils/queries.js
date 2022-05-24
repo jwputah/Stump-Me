@@ -20,7 +20,7 @@ export const QUERY_COMMENT = gql`
       commentText
       createdAt
       username
-      
+    
       }
     }
   }

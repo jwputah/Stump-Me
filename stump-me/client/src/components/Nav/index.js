@@ -17,7 +17,7 @@ function Nav() {
 
     return (
         <div class="topnav">
-<ul>
+<ul >
     <li>
         <Link to="/newGame">NEWGAME</Link>
     </li>
