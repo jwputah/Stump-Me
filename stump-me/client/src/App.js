@@ -1,4 +1,4 @@
-import logo from "./assets/images/stumpMe.png";
+//import logo from "./assets/images/stumpMe.png";
 
 // function App() {
 //   return (
@@ -19,7 +19,7 @@ import {
   ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
+//import { setContext } from "@apollo/client/link/context";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";

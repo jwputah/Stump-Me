@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Riddle extends React.Component {
     riddleApi = 'https://opentdb.com/api.php?amount=50&type=multiple';
     riddleArray = []
@@ -22,12 +23,18 @@ class Riddle extends React.Component {
             .then(res => res.json())
             .then(
                 result => {
-                    this.riddleArray = result.results;
+
+                    var tempArr = result.results.filter(element => {
+                       return element.question.includes("&quot" || "#039") ? false : true;
+                    })
+
+                    this.riddleArray = tempArr;
+                    console.log(this.riddleArray)
                     this.setState({
                         
                         isLoaded: true,
-                        riddleArray: result.results,
-                        riddle: result.results[0],
+                        riddleArray: tempArr,
+                        riddle: this.riddleArray[0],
                     });
                 },
                 error => {
@@ -39,6 +46,7 @@ class Riddle extends React.Component {
             );
     }
 
+    
     render() {
         
         return (
@@ -46,7 +54,17 @@ class Riddle extends React.Component {
                 <div className="container flex-row justify-space-between-lg justify-center align-center">
                     <h1 >{this.state.riddle.question}</h1>
                         <div >
-                            {this.state.riddle.incorrect_answers.concat(this.state.riddle.correct_answer).map((item) => (<h2 key={item}>{item}</h2>))}
+                            {this.state.riddle.incorrect_answers.concat(this.state.riddle.correct_answer).map((item) => (<button key={item} onClick={() => {
+                                console.log(this.state.riddle.correct_answer)
+                                if (item === this.state.riddle.correct_answer) {
+                                    console.log('correct');
+                                } else {
+                                    console.log('incorrect');
+                                }
+                            
+
+
+                            }}>{item}</button>))}
                         </div>
                 </div>
             </div>
