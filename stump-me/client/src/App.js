@@ -30,6 +30,7 @@ import NoMatch from "./pages/NoMatch";
 // import SingleThought from "./pages/SingleThought";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
+import Riddle from "./pages/Riddle";
 import '../src/assets/App.css';
 
 const httpLink = createHttpLink({
@@ -70,7 +71,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
               {/* <Route path="/thought/:id" element={<SingleThought />} /> */}
-              <Route path="/newGame" element={<h1> hello squirrels</h1>} />
+              <Route path="/newGame" element={<Riddle />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>
