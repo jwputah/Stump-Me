@@ -22,11 +22,28 @@
   color: #61dafb;
 }
 
-header, h1, h2 {
+header,
+h1, 
+h2 {
   text-align: center;
 }
 
+.riddlePage {
+  background-image: url(./images/stumpMe.png);
+  height: 600px;
+}
 
+.answerBtn {
+  width: 60%;
+  background-color: rgb(166, 113, 59);
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.answerBtn:hover {
+  transition-duration: 0.4s;
+  background-color: green;
+}
 
 /* Tyler's styling that my conflict with stuff
 /* Add a black background color to the top navigation */
@@ -35,10 +52,10 @@ li {
 }
 
 .topnav {
-  
+
   background-color: #333;
   overflow: hidden;
-  
+
 }
 
 /* Style the links inside the navigation bar */
@@ -48,20 +65,24 @@ li {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
+
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
-  
+
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
-  
+
 }
 
+.navTitle {
+  float: cneter;
+  color: #f2f2f2;
+}

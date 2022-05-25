@@ -21,7 +21,7 @@ import {
 } from "@apollo/client";
 //import { setContext } from "@apollo/client/link/context";
 
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
@@ -63,7 +63,7 @@ function App() {
       <Router>
         <Nav></Nav>
         <div className="flex-column justify-flex-start min-100-vh">
-          <Header />
+          {/* <Header /> */}
           <div className="container">
             <Routes>
               <Route path="/Home" element={<Home />} />
@@ -71,7 +71,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
               {/* <Route path="/thought/:id" element={<SingleThought />} /> */}
-              <Route path="/newGame" element={<Riddle />} />
+              <Route path="/Riddle" element={<Riddle />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>
