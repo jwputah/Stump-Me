@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // import ThoughtList from '../components/ThoughtList';
 // import ThoughtForm from '../components/ThoughtForm';
 // import FriendList from '../components/FriendList';
@@ -16,8 +16,9 @@ const Home = () => {
 
   return (
     <main>
-      <h1>HOME</h1>
-      {/* <div className="flex-row justify-space-between">
+      <div class="homePage">
+        <h1>HOME</h1>
+        {/* <div className="flex-row justify-space-between">
         {loggedIn && (
           <div className="col-12 mb-3">
             <ThoughtForm />
@@ -43,6 +44,7 @@ const Home = () => {
           </div>
         ) : null}
       </div> */}
+      </div>
     </main>
   );
 };
