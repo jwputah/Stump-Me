@@ -9,6 +9,7 @@ class Riddle extends React.Component {
 
         this.state = {
             riddleArray: [],
+            // mounted: true,
             riddle: {
                 question: "With which team did Michael Schumacher make his Formula One debut at the 1991 Belgian Grand Prix?",
                 correct_answer: "Jordan",
@@ -17,6 +18,10 @@ class Riddle extends React.Component {
         };
     }
 
+    // componentWillUnmount() {
+    //     this.mounted = false;
+    // }
+
     componentDidMount = () => {
         fetch(this.riddleApi)
             .then(res => res.json())
@@ -24,8 +29,8 @@ class Riddle extends React.Component {
                 result => {
                     this.riddleArray = result.results;
                     this.setState({
-                        
                         isLoaded: true,
+
                         riddleArray: result.results,
                         riddle: result.results[0],
                     });
@@ -39,15 +44,25 @@ class Riddle extends React.Component {
             );
     }
 
+
+
     render() {
-        
+        // const answerBtn = {
+        //     backgroundColor: "white",
+        //     color: "blue",
+        //     alignItems: "space-around",
+        // };
+
         return (
-            <div className="bg-secondary mb-4 py-2 flex-row align-center">
-                <div className="container flex-row justify-space-between-lg justify-center align-center">
-                    <h1 >{this.state.riddle.question}</h1>
-                        <div >
-                            {this.state.riddle.incorrect_answers.concat(this.state.riddle.correct_answer).map((item) => (<h2 key={item}>{item}</h2>))}
-                        </div>
+            <div>
+                <div>
+                    <>
+                        <h1 >{this.state.riddle.question}</h1>
+                    </>
+
+                    <>
+                        <h2>{this.state.riddle.incorrect_answers.concat(this.state.riddle.correct_answer).map((item) => (<button className='answerBtn' onClick={() => this.state.checkAnswer} key={item}>{item}</button>))}</h2>
+                    </>
                 </div>
             </div>
         )

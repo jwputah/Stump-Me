@@ -26,6 +26,17 @@ header, h1, h2 {
   text-align: center;
 }
 
+.answerBtn {
+  width: 60%;
+  background-color: rgb(166,113,59);
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.answerBtn:hover {
+  transition-duration: 0.4s;
+  background-color: green;
+}
 /* Tyler's styling that my conflict with stuff
 /* Add a black background color to the top navigation */
 .topnav {
