@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../stumpMe.png';
+
 import Auth from '../../utils/auth';
 
 const Header = () => {
@@ -13,8 +13,7 @@ const Header = () => {
     <header className="bg-secondary mb-4 py-2 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <Link to="/">
-          <h1>StumpMe</h1>
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1>Stump Me</h1>
         </Link>
 
         <nav className="text-center">
