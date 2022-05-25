@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 
@@ -10,6 +11,7 @@ class Riddle extends React.Component {
 
         this.state = {
             riddleArray: [],
+
             riddle: {
                 question: "With which team did Michael Schumacher make his Formula One debut at the 1991 Belgian Grand Prix?",
                 correct_answer: "Jordan",
@@ -31,10 +33,10 @@ class Riddle extends React.Component {
                     this.riddleArray = tempArr;
                     console.log(this.riddleArray)
                     this.setState({
-
                         isLoaded: true,
                         riddleArray: tempArr,
                         riddle: this.riddleArray[0],
+
                     });
                 },
                 error => {
@@ -47,6 +49,7 @@ class Riddle extends React.Component {
     }
 
 
+
     render() {
 
         return (
@@ -55,14 +58,18 @@ class Riddle extends React.Component {
                     <h1 >{this.state.riddle.question}</h1>
                     <div >
                         <h2>
-                            {this.state.riddle.incorrect_answers.concat(this.state.riddle.correct_answer).map((item) => (<button className='answerBtn' key={item} onClick={() => {
-                                console.log(this.state.riddle.correct_answer)
-                                if (item === this.state.riddle.correct_answer) {
-                                    console.log('correct');
-                                } else {
-                                    console.log('incorrect');
-                                }
-                            }}>{item}</button>))}
+                            {this.state.riddle.incorrect_answers.concat(this.state.riddle.correct_answer).map((item) => (
+                                <button className='answerBtn' key={item} onClick={() => {
+
+                                    console.log(this.state.riddle.correct_answer)
+                                    if (item === this.state.riddle.correct_answer) {
+
+                                        console.log('correct');
+
+                                    } else {
+                                        console.log('incorrect');
+                                    }
+                                }}>{item}</button>))}
                         </h2>
                     </div>
                     <h3>
@@ -75,5 +82,3 @@ class Riddle extends React.Component {
 }
 
 export default Riddle
-
-// {/* <h2>{this.state.riddle.correct_answer + "," + this.state.riddle.incorrect_answers}</h2> */}
