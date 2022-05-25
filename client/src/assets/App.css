@@ -1,34 +1,18 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 header,
 h1, 
 h2 {
   text-align: center;
+  color:#07e694;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.homePage {
+  color:#07e694;
+  background: linear-gradient(45deg, blue, rgb(169, 6, 158));
 }
 
 .riddlePage {
+  background: #50064b;
   background-image: url(./images/stumpMe.png);
   height: 600px;
 }
@@ -38,17 +22,20 @@ h2 {
   background-color: rgb(166, 113, 59);
   font-size: 20px;
   border-radius: 20px;
+  color:#07e694
 }
 
 .answerBtn:hover {
   transition-duration: 0.4s;
   background-color: green;
+  color:#50064b
 }
 
 /* Tyler's styling that my conflict with stuff
 /* Add a black background color to the top navigation */
 li {
   display: inline;
+  color:#07e694; 
 }
 
 .topnav {
@@ -85,4 +72,9 @@ li {
 .navTitle {
   float: cneter;
   color: #f2f2f2;
+}
+
+.container {
+  background: linear-gradient(45deg, rgb(169, 6, 158), blue);
+  color: white
 }

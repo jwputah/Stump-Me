@@ -1,5 +1,5 @@
-import React from "react";
-import { Navigate, useParams } from "react-router-dom";
+import React from 'react';
+import { Navigate, useParams } from 'react-router-dom';
 
 // Leaving as place holder for messagees and friends.
 // import ThoughtForm from '../components/ThoughtForm';
@@ -10,7 +10,7 @@ import { Navigate, useParams } from "react-router-dom";
 // import { useQuery } from "@apollo/client";
 // import { QUERY_USER, QUERY_ME } from "../utils/queries";
 //import { ADD_FRIEND } from '../utils/mutations';
-import Auth from "../utils/auth";
+import Auth from '../utils/auth';
 
 const Profile = (props) => {
   const { username: userParam } = useParams();
