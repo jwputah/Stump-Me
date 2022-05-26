@@ -3,6 +3,10 @@
 ## Deployed Page
 
 <h3><a href= "">STUMP ME</a></h3>
+![stumpMeGame](https://user-images.githubusercontent.com/94770081/170418499-d01a92af-0453-45a6-8510-78e6523a7372.png)
+## App Link
+### https://gentle-scrubland-60701.herokuapp.com/
+
 
 ## Table of Contents
 
